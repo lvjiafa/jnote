@@ -1,0 +1,35 @@
+## 配置github ssh
+
+$ git config --global user.name "lvjiafa"
+$ git config --global user.email "lvajiafa@126.com"
+
+$ ssh-keygen -t rsa -C "lvajiafa@126.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/lvjiafa/.ssh/id_rsa):
+/c/Users/lvjiafa/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/lvjiafa/.ssh/id_rsa.
+Your public key has been saved in /c/Users/lvjiafa/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:gV8NumgFRfMPFvnUOPKoDb9RB7LT3Xp1vQSXlRCwng0 lvajiafa@126.com
+The key's randomart image is:
++---[RSA 2048]----+
+|      .o+ oo.=o =|
+|       o +++*..+ |
+|      . + =E.+o..|
+|       +.==oO o.=|
+|      o S= =.o..+|
+|     .  . +   ...|
+|           o   . |
+|          .      |
+|                 |
++----[SHA256]-----+
+
+$ cat /c/Users/lvjiafa/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9B83gfLvOWsIB8QTyVxao/KSENiYhu+HrKR2/EkooAmapiaz3MaQf15NlcUWvNQ95XTyDkGrQMmBt3kBJo/1Na75n13vnQpWiY/kAsEwCkgCqBXJLs3pHlyJWol8I6FcYMP0dHTHTAKTSriiYNa52y0dzXhnqcJG0RAX96TIFiM
+4W63RUJE8cDbmcHcXrtHXYen/PS/qtr+L2Q04k/IKUBpSWSc4KmfU4svQo0ju2LqzsRH1D/VRLadV6lZhGChG4hgr0VwwdJ6C1kmzoTC6vUAmTB0rJoo5UDIi/eZFhiiPbISe9De2bpqLjj2/XLQKAwTbvw1tjItz+iZkTulEx lvajiafa@126.com
+
+## 拷贝到github账户
+Setting --> SSH and GPG keys --> New SSH key
